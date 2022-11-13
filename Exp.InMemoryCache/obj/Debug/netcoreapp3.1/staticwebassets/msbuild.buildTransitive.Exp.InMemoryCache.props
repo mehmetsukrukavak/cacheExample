@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Exp.InMemoryCache.props" />
+</Project>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "efNN0LsgPRio8HeVsz3AvnIfnkkCXNWLP7hN1w8ZNVS1gsvz0p7SbrLnTugC8K4m5XdTgphPRuXdpo5YPlbzUw==",
+  "success": true,
+  "projectFilePath": "/Users/mehmetsukrukavak/Projects/CacheExample/Exp.InMemoryCache/Exp.InMemoryCache.csproj",
+  "expectedPackageFiles": [
+    "/Users/mehmetsukrukavak/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/mehmetsukrukavak/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.31/microsoft.netcore.app.host.osx-x64.3.1.31.nupkg.sha512",
+    "/Users/mehmetsukrukavak/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
