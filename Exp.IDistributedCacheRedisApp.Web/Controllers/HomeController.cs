@@ -31,6 +31,9 @@ public class HomeController : Controller
     public IActionResult Privacy()
     {
         var value = _distributedCache.GetString("sehir");
+
+
+        _distributedCache.Remove("sehir");
         return View();
     }
 
