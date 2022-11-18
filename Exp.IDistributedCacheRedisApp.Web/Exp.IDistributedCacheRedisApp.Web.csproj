@@ -8,8 +8,14 @@
 
   <ItemGroup>
     <None Remove="Microsoft.Extensions.Caching.StackExchangeRedis" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Product\" />
   </ItemGroup>
 </Project>

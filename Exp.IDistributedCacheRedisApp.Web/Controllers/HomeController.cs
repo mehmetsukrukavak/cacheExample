@@ -25,6 +25,7 @@ public class HomeController : Controller
         };
 
         _distributedCache.SetString("sehir", "Mehmet", cacheEntryOptions);
+
         return View();
     }
 
@@ -32,6 +33,7 @@ public class HomeController : Controller
     {
         var value = _distributedCache.GetString("sehir");
 
+        ViewBag.city = value;
 
         _distributedCache.Remove("sehir");
         return View();
