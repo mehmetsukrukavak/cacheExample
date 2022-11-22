@@ -6,10 +6,10 @@ namespace Exp.RedisExchangeAPI.Web.Services
 {
     public class RedisService
     {
-        private readonly string? _redisHost;
-        private readonly string? _redisPort;
+        private readonly string _redisHost;
+        private readonly string _redisPort;
         private ConnectionMultiplexer _redis;
-        public IDatabase? db { get; set; }
+        public IDatabase db { get; set; }
 
         public RedisService(IConfiguration configuration)
         {
