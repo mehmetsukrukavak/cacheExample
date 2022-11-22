@@ -10,6 +10,7 @@
     <None Remove="Microsoft.Extensions.Caching.StackExchangeRedis" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Views\Product\" />
+    <None Remove="StackExchange.Redis" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.0" />

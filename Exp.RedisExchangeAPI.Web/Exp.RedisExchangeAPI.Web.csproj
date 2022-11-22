@@ -6,8 +6,12 @@
 
   <ItemGroup>
     <None Remove="StackExchange.Redis" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\.editorconfig" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.80" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
