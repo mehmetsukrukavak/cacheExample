@@ -9,6 +9,7 @@
     <None Remove="Services\" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Views\StringType\" />
+    <None Remove="Views\ListType\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="StackExchange.Redis" Version="2.6.80" />
@@ -17,5 +18,6 @@
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Views\StringType\" />
+    <Folder Include="Views\ListType\" />
   </ItemGroup>
 </Project>
