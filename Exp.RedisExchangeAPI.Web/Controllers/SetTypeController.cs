@@ -6,16 +6,15 @@ using Exp.RedisExchangeAPI.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using StackExchange.Redis;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Exp.RedisExchangeAPI.Web.Controllers
 {
-    public class HashTypeController : Controller
+    public class SetTypeController : Controller
     {
         private readonly RedisService _redisService;
         private readonly IDatabase db;
-        private string listKey = "hashnames";
-        public HashTypeController(RedisService redisService)
+        private string listKey = "setnames";
+        public SetTypeController(RedisService redisService)
         {
             _redisService = redisService;
             db = _redisService.GetDb(2);
