@@ -13,5 +13,5 @@
 
 @foreach (var item in Model)
 {
-    <li>@item <a asp-controller="HashType" asp-action="DeleteItem" asp-route-name="@item">Delete</a></li>
+    <li>@item <a asp-action="DeleteItem" asp-route-name="@item">Delete</a></li>
 }
