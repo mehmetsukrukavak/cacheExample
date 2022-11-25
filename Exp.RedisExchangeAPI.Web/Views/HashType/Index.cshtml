@@ -1,0 +1,17 @@
+﻿@model HashSet<string>
+@{
+    ViewData["Title"] = "Hash Type Page";
+}
+
+
+<h1 class="display-4">Hash Type</h1>
+<form asp-action="Add" method="post" enctype="application/x-www-form-urlencoded">
+    <input type="text" name="name" />
+    <button type="submit">Save</button>
+</form>
+
+
+@foreach (var item in Model)
+{
+    <li>@item <a asp-controller="HashType" asp-action="DeleteItem" asp-route-name="@item">Delete</a></li>
+}
