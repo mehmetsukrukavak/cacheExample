@@ -8,18 +8,14 @@ using StackExchange.Redis;
 
 namespace Exp.RedisExchangeAPI.Web.Controllers
 {
-    public class ListTypeController : Controller
-    {
-
-        private readonly RedisService _redisService;
-        private readonly IDatabase db;
+    public class ListTypeController : BaseController
+    { 
         private string listKey = "names";
-        public ListTypeController(RedisService redisService)
+
+        public ListTypeController(RedisService redisService) : base(redisService)
         {
-            _redisService = redisService;
-            db = _redisService.GetDb(1);
         }
-        
+
         public IActionResult Index()
         {
             List<string> nameList = new List<string>();

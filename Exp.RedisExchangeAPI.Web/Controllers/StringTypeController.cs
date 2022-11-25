@@ -8,14 +8,10 @@ using StackExchange.Redis;
 
 namespace Exp.RedisExchangeAPI.Web.Controllers
 {
-    public class StringTypeController : Controller
+    public class StringTypeController : BaseController
     {
-        private readonly RedisService _redisService;
-        private readonly IDatabase db;
-        public StringTypeController(RedisService redisService)
+        public StringTypeController(RedisService redisService) : base(redisService)
         {
-            _redisService = redisService;
-            db = _redisService.GetDb(0);
         }
 
         public IActionResult Index()

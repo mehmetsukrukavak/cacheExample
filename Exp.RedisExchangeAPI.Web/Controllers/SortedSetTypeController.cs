@@ -10,16 +10,15 @@ using StackExchange.Redis;
 
 namespace Exp.RedisExchangeAPI.Web.Controllers
 {
-    public class SortedSetTypeController : Controller
+    public class SortedSetTypeController : BaseController
     {
-        private readonly RedisService _redisService;
-        private readonly IDatabase db;
-        private string listKey = "setnames";
-        public SortedSetTypeController(RedisService redisService)
+      
+        private string listKey = "sortedsetnames";
+
+        public SortedSetTypeController(RedisService redisService) : base(redisService)
         {
-            _redisService = redisService;
-            db = _redisService.GetDb(3);
         }
+
         // GET: /<controller>/
         public IActionResult Index()
         {
